@@ -1,0 +1,56 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+
+.container{
+	width: 100%;
+	position: relative;
+	overflow-x: hidden;
+}
+
+.slider{
+	position: relative;
+	width: 500%;
+	animation: animate 15s linear 2s infinite;
+}
+.slide{
+	position: relative;
+	height: 100vh;
+	float: left;
+	width: 20%;
+	background-size: cover;
+}
+
+.slide:nth-child(1){
+	background-image: url(_IMAGENS/banner-grande.jpg);
+	background-attachment: fixed;
+}
+.slide:nth-child(2){
+	background-image: url(_IMAGENS/banner-grande.png);
+	background-attachment: fixed;
+}
+.slide:nth-child(3){
+	background-image: url(_IMAGENS/parallax-update_2048x.progressive.png.jpg);
+	background-attachment: fixed;
+}
+
+@keyframes animate
+{
+	0%
+	{
+		left: 0;
+	}
+	20%
+	{
+		left: -100%;
+	}
+	30%
+	{
+		left: -100%;
+	}
+	50%
+	{
+		left: -200%;
+	}
+}
